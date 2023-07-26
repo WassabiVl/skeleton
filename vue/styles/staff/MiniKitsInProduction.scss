@@ -1,0 +1,40 @@
+@use '../quasarVariables';
+
+.minikitsinprod {
+
+
+  .q-icon {
+    color: quasarVariables.$primary !important;
+
+  }
+
+  .q-chip {
+    color: quasarVariables.$white;
+    font-size: 1.2rem;
+
+    &.green {
+      background-color: quasarVariables.$positive
+    }
+
+    &.orange {
+      background-color: quasarVariables.$warning
+    }
+
+    &.red {
+      background-color: quasarVariables.$alarm
+
+    }
+  }
+
+  //.q-expansion-item {
+  //  background: rgba(0, 150, 136, 0.1);
+  //  border-style: solid;
+  //  border-width: 1px;
+  //  border-color: quasarVariables.$medium-grey;
+  //
+  //  &__content {
+  //    background-color: quasarVariables.$white;
+  //    padding: 1rem;
+  //  }
+  //}
+}

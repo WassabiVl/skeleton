@@ -1,0 +1,363 @@
+@use '../quasarVariables';
+
+main .staff {
+
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .q-card {
+    width: 100%;
+    min-width: 490px;
+    padding: 1.5rem;
+  }
+
+  .q-item__label {
+    #defective {
+      color: quasarVariables.$alarm;
+      font-weight: bold;
+
+    }
+  }
+
+
+  ///////////////// Current Kits in Production quick cards /////////////////////
+  .new-production-timer{
+
+    .manager-headline {
+      font-size: 24px;
+      color: quasarVariables.$primary;
+      text-align: center;
+    }
+
+    .manager-textbox {
+      background-color: quasarVariables.$white;
+      position: relative;
+      max-width: 350px;
+      text-align: center;
+      border-color: quasarVariables.$primary;
+      border-bottom-style: solid;
+      border-width: 2px;
+      border-radius: 40px;
+      min-width: 350px;
+      min-height: 170px;
+      }
+
+    .manager-text {
+      margin-top: 30px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 1rem;
+    }
+
+     .manager-portrait {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      webkit-transform: translateX (-50%);
+      transform: translateX(-50%);
+      //border-radius: 50%;
+    }
+
+    .manager-container {
+      margin-top: 2rem;
+    }
+
+  }
+
+
+
+  ///////////////current generator table styling///////////////
+  .currentGen {
+
+    .stickytable { /* height or max-height is important */
+      max-height: fit-content;
+
+      /* specifying max-width so the example can
+        highlight the sticky column on any browser window */
+      width: auto;
+
+      td:first-child { /* bg color is important for td; just specify one */
+        background-color: #F5F5F5;
+      }
+
+      td:first-child + td { /* bg color is important for td; just specify one */
+        background-color: #F5F5F5;
+      }
+
+      tr th {
+        position: sticky;
+        /* higher than z-index for td below */
+        z-index: 2;
+        /* bg color is important; just specify one */
+      }
+
+      /* this will be the loading indicator */
+      thead tr:last-child th { /* height of all previous header rows */
+        top: 48px;
+        /* highest z-index */
+        z-index: 3;
+      }
+
+      thead tr:first-child th {
+        top: 0;
+        z-index: 3;
+      }
+
+      tr:first-child th:first-child { /* highest z-index */
+        z-index: 5;
+      }
+
+      tr:first-child th:first-child + th { /* highest z-index */
+        z-index: 5;
+      }
+
+      //td:first-child {
+      //  z-index: 1;
+      //}
+      //td:first-child + td {
+      //  z-index: 1;
+      //}
+      td:first-child,
+      th:first-child {
+        position: sticky;
+        left: 0;
+      }
+
+      td:first-child + td,
+      th:first-child + th {
+        position: sticky;
+        left: 5.91rem;
+      }
+    }
+
+    .q-table th {
+      font-size: 16px;
+      background: quasarVariables.$primary;
+      color: quasarVariables.$white;
+    }
+
+    .q-table tbody td {
+      font-size: 16px;
+    }
+
+    .q-table__control {
+      .q-icon{
+        color: quasarVariables.$dark-grey;
+      }
+    }
+
+    #newkit-tooltip {
+      width: 160px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    #genname {
+      padding-left: 0;
+      z-index: 100;
+    }
+
+    #plusbuttoncell {
+      z-index: 101;
+    }
+
+    #checkoutcell {
+      z-index: 101;
+    }
+
+    .q-avatar {
+      height: 1.5em;
+      width: 1.5em;
+    }
+
+    .q-mt-lg {
+      padding: 2rem;
+    }
+
+    #buttonnewgenerator {
+      margin-bottom: 1rem;
+    }
+
+    #buttonstartelution {
+      background-color: quasarVariables.$secondary;
+      color: quasarVariables.$white;
+      margin-top: 1rem;
+    }
+
+    #buttonstartelution:hover {
+      background-color: quasarVariables.$primary;
+    }
+
+    .q-icon {
+      color: quasarVariables.$white;
+
+      &-diff {
+        color: quasarVariables.$secondary;
+      }
+    }
+
+    .q-card__section--vert {
+      padding: 0;
+    }
+
+   //// Loading bar showing how full the Generator still is ////
+    .absolute-full{
+      border-color: quasarVariables.$dark-grey;
+      border-width: 1px;
+      border-style: dashed;
+    }
+
+    .q-linear-progress {
+      height: 1.25rem
+    }
+
+  }
+
+  //// Checkbox to checkout old generators ////
+
+  .q-checkbox__svg {
+    border-width: 0 !important;
+  }
+
+  ///// kit selection styling ////
+
+  .q-card .kit-selection {
+    max-width: 35rem;
+    min-width: 30rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: fit-content;
+    border-color: quasarVariables.$primary;
+    border-width: 4px;
+
+    .col, .col-xs {
+      flex: auto;
+    }
+
+    .q-table th {
+      font-size: 16px;
+      background: quasarVariables.$primary;
+      color: quasarVariables.$white;
+    }
+
+    .q-table tbody td {
+      font-size: 16px;
+    }
+
+    .q-avatar {
+      height: 1.5em;
+      width: 1.5em;
+    }
+
+    .q-mt-lg {
+      padding: 1rem;
+    }
+
+    .q-pa-md {
+      padding: 0 0 1rem 0;
+    }
+
+    .q-pa-md.kitinput {
+      padding: 0;
+    }
+
+    .q-card__section--vert {
+      padding: 1.5rem;
+    }
+
+    .q-mt-md {
+      margin-top: 16px;
+      background-color: quasarVariables.$medium-grey;
+      padding: .5rem;
+    }
+
+    #kit-selection-col {
+      width: auto;
+      margin-right: 1rem;
+      max-width: 350px;
+    }
+
+    .q-select {
+      background-color: quasarVariables.$white;
+
+      .q-icon {
+        color: quasarVariables.$primary;
+      }
+    }
+
+    #buttonstartkit {
+      background-color: quasarVariables.$secondary;
+      color: quasarVariables.$white;
+    }
+
+    #buttonstartkit:hover {
+      background-color: quasarVariables.$primary;
+    }
+  }
+
+  //// Current Generator Activity Table ////
+
+  #activity {
+    width: auto;
+
+    .q-table__top {
+      padding: 10px 0 0 10px;
+    }
+
+    .q-chip {
+      margin: 1rem 0 1rem 0;
+      height: 3rem;
+      font-size: 1.25rem;
+      //background-color: quasarVariables.$dark-grey;
+      //color: #e0c619;
+      background: none;
+
+      .q-icon {
+        color: #e0c619;
+      }
+    }
+  }
+
+  //// Warning Message before QC ////
+
+  #warning-message {
+    max-width: 100%;
+    min-width: 300px;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-style: solid;
+    border-color: quasarVariables.$secondary;
+    border-width: 4px;
+  }
+
+  .q-item__label {
+    line-height: 1.2em !important;
+    font-size: 1.0rem;
+  }
+
+  .q-mt-md {
+    margin-top: 0;
+  }
+
+}
+
+////////// TOOLTIP and Generator Quickbutton /////////
+
+#generator-tooltip {
+  min-width: 200px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#generator-quickbutton .q-icon {
+  color: quasarVariables.$dark-grey
+}

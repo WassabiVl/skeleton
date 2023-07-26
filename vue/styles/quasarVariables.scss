@@ -1,0 +1,40 @@
+// It's highly recommended to change the default colors
+// to match your app's branding.
+
+@use 'quasar/src/css/variables.sass';
+
+$typography-font-family: 'Open Sans', 'OpenSans', 'Roboto', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+
+//$primary: rgb(239, 125, 33);
+//$secondary: rgb(60, 88, 136);
+$primary: rgb(0, 150, 136);
+$secondary: rgb(239, 125, 33);
+$accent: #9C27B0;
+$accent2: #ceeeee !important;
+$primary-light: rgba(0, 150, 136, 0.1);
+
+$dark: #393939;
+$white: #ffffff;
+$black: #000000;
+
+$light-grey: rgb(245, 245, 245);
+$medium-grey: rgb(220, 220, 220);
+$dark-grey: rgb(107, 107, 107);
+$lightslate-grey: rgb(119,136,153);
+
+
+$positive: rgb(0, 128, 0);
+$negative: rgb(255, 0, 0);
+$info: #31CCEC;
+$warning: #F2C037;
+$alarm: rgb(255, 0, 0);
+$pdf: #f40f02;
+
+
+//// HEADLINES ////
+$h1: (size: 4rem, line-height: 4rem, letter-spacing: -.01562em, weight: 300);
+$h2: (size: 3rem, line-height: 3rem, letter-spacing: -.00833em, weight: 300);
+$h3: (size: 2.5rem, line-height: 2.65rem, letter-spacing: normal, weight: 400);
+$h4: (size: 2.125rem, line-height: 2.5rem, letter-spacing: .00735em, weight: 400);
+$h5: (size: 1.5rem, line-height: 2rem, letter-spacing: normal, weight: 400);
+$h6: (size: 1.25rem, line-height: 2rem, letter-spacing: .0125em, weight: 500);

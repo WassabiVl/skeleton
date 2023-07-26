@@ -1,0 +1,110 @@
+@use '../quasarVariables';
+
+main .newGen {
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    padding-bottom: .5rem;
+  }
+
+  .q-field__native {
+    color: quasarVariables.$primary;
+    font-size: 1.25rem;
+  }
+
+  #select-generator {
+    padding: 0 1rem 0 0;
+  }
+
+  #select-activity {
+    padding: 0;
+  }
+
+  #lotnumber {
+    padding: 0 0 0 1rem;
+  }
+
+  #select-delivery-date {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  #select-calibration-date {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  #select-expiration-date {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .bg-primary {
+    background: quasarVariables.$secondary !important;
+  }
+
+  .q-time__clock-position--active {
+    background: quasarVariables.$secondary;
+  }
+
+  .q-time__clock-pointer {
+    color: quasarVariables.$secondary;
+  }
+
+  .q-date {
+    min-width: 250px;
+    max-width: 100%;
+    margin-top: .5rem;
+    vertical-align: top;
+  }
+
+  .q-time {
+    min-width: 250px;
+    max-width: 100%;
+    margin-top: .5rem;
+    margin-left: .5rem
+  }
+
+  .q-gutter-md-resultcard > * {
+    margin-top: 0;
+  }
+
+  .selection-card {
+    width: 100%;
+    //max-width: 980px;
+    min-width: 620px;
+    margin: auto;
+  }
+
+  #result-labels {
+    min-width: fit-content;
+    max-width: fit-content;
+  }
+
+  #results {
+    min-width: auto;
+  }
+
+  .q-icon {
+    color: quasarVariables.$dark;
+  }
+
+  #buttonfinish {
+    background-color: quasarVariables.$secondary;
+    color: quasarVariables.$white;
+  }
+
+  #buttonfinish:hover {
+    background-color: quasarVariables.$primary;
+  }
+
+  .submitbutton {
+    width: 350px;
+    min-height: 3.5rem;
+    font-size: 1.25rem;
+  }
+
+}

@@ -1,0 +1,40 @@
+@use '../quasarVariables';
+
+.genHistory {
+
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .q-table th {
+    font-size: 1rem;
+    background: quasarVariables.$primary;
+    color: quasarVariables.$white;
+  }
+
+  .q-table tbody td {
+    font-size: 16px;
+  }
+
+  .q-avatar {
+    height: 1.5em;
+    width: 1.5em;
+  }
+
+  .q-mt-lg {
+    padding: 2rem;
+  }
+
+  .q-card__section--vert {
+    padding: 1rem;
+  }
+
+  #gen-name {
+    padding: 0;
+  }
+
+}

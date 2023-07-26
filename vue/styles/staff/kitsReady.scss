@@ -1,0 +1,45 @@
+@use '../quasarVariables';
+
+main .kitsready {
+
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .q-icon {
+    color: quasarVariables.$dark;
+  }
+
+  .prodcards {
+    width: 100%;
+    max-width: 450px;
+    // background: rgba(#009688, .1);
+    border-style: solid;
+    border-width: 2px;
+    border-color: quasarVariables.$primary;
+  }
+
+  #buttontobatchrecord {
+    background-color: quasarVariables.$secondary;
+    color: quasarVariables.$white;
+    width: 100%;
+
+    .q-icon {
+      color: quasarVariables.$white;
+    }
+  }
+
+  #buttontobatchrecord:hover {
+    background-color: quasarVariables.$primary;
+  }
+
+  .q-item {
+    font-size: 1rem;
+  }
+
+
+}

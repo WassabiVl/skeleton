@@ -1,0 +1,24 @@
+@use '../quasarVariables';
+
+.pdf-summary {
+
+  h4 {
+    padding: 1rem;
+    color: quasarVariables.$white;
+    background: quasarVariables.$primary;
+    width: auto;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .text-block {
+    white-space: pre; // or pre-line
+  }
+
+}
+
+
+
+

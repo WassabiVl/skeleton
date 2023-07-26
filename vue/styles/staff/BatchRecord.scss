@@ -1,0 +1,166 @@
+@use '../quasarVariables';
+
+#a4Page{
+  background: white;
+  width: 21cm;
+  //height: 29.7cm;
+  display: block;
+  margin: 1cm auto 3cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  border: .25cm solid quasarVariables.$lightslate-grey;
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.batchrecord {
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+
+  p {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  hr {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  tr {
+    vertical-align: text-top;
+  }
+
+  .q-table__container > div:first-child {
+    background-color: quasarVariables.$medium-grey
+  }
+
+  .container {
+    padding-left: 0;
+  }
+
+  .headline {
+    h4 {
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+    }
+    h6 {
+      text-align: center;
+    }
+    img {
+      float: left;
+    }
+    hr {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      text-align: left;
+      margin-top: 1rem;
+     }
+  }
+
+ #lotnumber {
+    padding-left: 0;
+    padding-top: .5rem;
+    height: 45px;
+    border-width: 2px 1px 2px 2px;
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 0
+    }
+ }
+
+  .signaturewrappertop {
+    margin-top: 4rem;
+    width: 100%;
+    overflow: hidden; /* add this to contain floated children */
+  }
+  #placetop {
+    width: 50%;
+    float:left; /* add this */
+    padding-right: 10px;
+
+  }
+  #signaturetop {
+    float: left; /* add this */
+  }
+
+  .signaturewrapperbottom {
+    width: 100%;
+    overflow: hidden; /* add this to contain floated children */
+  }
+  #place {
+    width: 50%;
+    float:left; /* add this */
+    padding-right: 10px;
+    padding-bottom: 10px
+
+  }
+  #signature {
+    float: left; /* add this */
+    padding-bottom: 10px
+  }
+
+
+}
+
+#gentable {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: text-top;
+
+  .q-table td {
+    border-bottom-width: 1px;
+    border-color: rgba(0, 0, 0, 0.12);
+    border-style: solid;
+    hyphens: auto;
+  }
+
+  tr {
+    vertical-align: text-top;
+  }
+}
+
+#kittable {
+  margin-bottom: 1rem;
+  width: 96%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: text-top;
+
+  .q-table td {
+    border-bottom-width: 1px;
+    hyphens: auto;
+    border-color: rgba(0, 0, 0, 0.12);
+    border-style: solid;
+  }
+
+  tr {
+    vertical-align: text-top;
+  }
+}
+
+
+#signatureTable  {
+  margin-bottom: 1rem;
+  width: 96%;
+  display: inline-block;
+  vertical-align: text-top;
+  flex-wrap: nowrap;
+
+  .q-table td {
+    hyphens: auto;
+    border-bottom-width: 1px;
+    border-color: rgba(0, 0, 0, 0.12);
+    border-style: solid;
+  }
+
+  tr {
+    vertical-align: text-top;
+  }
+}

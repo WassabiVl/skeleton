@@ -1,0 +1,33 @@
+@use '../quasarVariables';
+
+main .qaPanel {
+
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+  .q-item__label{
+    .q-icon{
+      color: green;
+    }
+  }
+
+  .q-icon {
+    color: quasarVariables.$primary;
+  }
+
+  .q-btn {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+#recom-check{
+      color: quasarVariables.$primary;
+}
+
+
+

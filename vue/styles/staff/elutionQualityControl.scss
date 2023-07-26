@@ -1,0 +1,492 @@
+@use '../quasarVariables';
+
+main .elQA {
+
+  .infobox-bg {
+    background-image: linear-gradient(87deg, rgb(45, 206, 137), rgb(45, 206, 204)) !important;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .values-bg {
+    background-image: linear-gradient(273deg, rgb(45, 206, 137), rgb(45, 206, 204)) !important;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+
+  p {
+    font-size: 1.25rem;
+    padding-bottom: .5rem;
+  }
+
+  .topline {
+    width: 100%;
+
+    .box-topline-head {
+      height: 100%;
+      text-align: center;
+    }
+
+    .box-topline-file {
+      width: 100%;
+      height: 100%;
+      text-align: right;
+    }
+  }
+
+
+  /// Sticky Tabs ///
+
+  .q-tab {  /*alle gleich breit egal wie lang die Schrift */
+    flex: 1 1;
+  }
+
+  .q-tabs {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 4rem;
+    background: quasarVariables.$white;
+    border-style: solid;
+    border-color: quasarVariables.$light-grey;
+    border-width: 2px;
+    z-index: 10;
+  }
+
+  #tabMaterial:hover, #tabElution:hover, #tabQA:hover {
+    background-color: quasarVariables.$primary;
+
+    .q-icon {
+      color: quasarVariables.$white;
+    }
+
+    .q-tab__label {
+      color: quasarVariables.$white;
+    }
+  }
+
+  div [aria-selected="true"]{
+    background-color: quasarVariables.$primary;
+    .q-icon {
+      color: quasarVariables.$white;
+    }
+
+    .q-tab__label {
+      color: quasarVariables.$white;
+    }
+  }
+
+  #result {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #select-lotnumber {
+    padding: 0 1rem 0 0;
+  }
+
+  #select-calibrationdate {
+    padding: 0 0 0 1rem;
+  }
+
+  #generator-infobox {
+    max-width: 350px;
+    min-width: 250px;
+    //background-image: linear-gradient(87deg, rgb(45, 206, 137), rgb(45, 206, 204)) !important;
+
+    h4 {
+      color: quasarVariables.$primary;
+    }
+
+    h5 {
+      padding-bottom: 1rem;
+    }
+  }
+
+  #infobox-values {
+    max-width: 25%;
+    min-width: 300px;
+    //background-image: linear-gradient(273deg, rgb(45, 206, 137), rgb(45, 206, 204)) !important;
+
+    h5 {
+      padding-bottom: 1rem;
+      color: quasarVariables.$dark-grey;
+      font-size: 1.4rem;
+    }
+  }
+
+  #buttonfinish {
+    background-color: quasarVariables.$secondary;
+    color: quasarVariables.$white;
+  }
+
+  #buttonfinish:hover {
+    background-color: quasarVariables.$primary;
+  }
+
+//// Sticky bottom Element ////
+
+  .q-page-sticky--shrink > div {
+    width: 100%
+  }
+
+  #extractedelution {
+    width: 100%;
+    margin-top: 0;
+    background: quasarVariables.$white;
+    border-top: 2px;
+    border-top-color: quasarVariables.$primary;
+    border-style: solid;
+    padding-top: 0;
+  }
+
+  .submittoqa {
+    margin: auto;
+    width: 100%;
+    min-height: 3.5rem;
+    font-size: 1.25rem;
+  }
+
+  .box-material {
+    display: grid;
+    grid-template-columns:
+      minmax(300px, auto)
+      minmax(auto, 400px)
+  ;
+    gap: 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+.box-elution {
+    display: grid;
+    //grid-auto-flow: column;
+    //grid-auto-columns: 1fr;
+    gap: 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .box-quality {
+    display: grid;
+    //grid-auto-flow: column;
+    //grid-auto-columns: 1fr;
+    gap: 2em;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: 100%;
+    align-items: flex-start;
+  }
+////////////////////////////////
+
+
+  .calcactivity {
+    color: quasarVariables.$secondary;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  #tasklist {
+    max-width: 100%;
+    margin-bottom: 150px;
+    padding: 0 10% 0 10%;
+  }
+
+  #qclist {
+    min-width: 380px;
+    padding: 2rem;
+  }
+
+  /*
+  #mathcard {
+    border-color: quasarVariables.$secondary;
+    border-style: solid;
+    border-width: .2rem;
+    min-width: 380px;
+  }
+  */
+
+  .q-input {
+    background-color: quasarVariables.$white;
+  }
+
+  #qcMath {
+    align-items: flex-start;
+    padding: 2rem;
+    min-width: 380px;
+  }
+
+  .h4classSwitch {
+    font-size: 3rem;
+    color: v-bind(dataResultColour);
+  }
+
+  .q-icon {
+    color: quasarVariables.$primary;
+
+  }
+
+  textarea {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    height: auto;
+  }
+
+
+  /// General Label indicators for numbering of the production steps with circles///
+  [id$=_label] {
+    font-size: 1.5rem;
+    color: quasarVariables.$white;
+    background: quasarVariables.$primary;
+    left: 1rem;
+    width: auto;
+    //max-width: 500px;
+    height: 40px;
+    border-radius: 0;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+    padding: 10px;
+    margin-bottom: .5rem;
+
+    span {
+      margin-left: .2rem;
+    }
+  }
+
+  /// General Label indicators for numbers input///
+  [id^=number_] {
+    font-size: 1.5rem;
+    color: quasarVariables.$white;
+    background: quasarVariables.$primary;
+    left: 1rem;
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+    padding: 10px;
+    margin-bottom: .5rem;
+
+    span {
+      margin-left: .2rem;
+    }
+  }
+
+  /// MBq Label Input field ////
+  #MBq__label {
+    font-size: 1.5rem;
+    color: quasarVariables.$white;
+    background: quasarVariables.$primary;
+    left: 1rem;
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+    padding: 10px;
+    margin-bottom: .5rem;
+
+    span {
+      margin-left: .2rem;
+    }
+  }
+
+  /// Time Label Input field ////
+  #time__label {
+    font-size: 1.5rem;
+    color: quasarVariables.$white;
+    background: quasarVariables.$primary;
+    left: 1rem;
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    border-radius: 0;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+    padding: 10px;
+    margin-bottom: .5rem;
+
+    span {
+      margin-left: .2rem;
+    }
+  }
+
+
+  /********* save for later use maybe
+
+   #Link__label {
+
+     font-size: 1.5rem;
+     background: quasarVariables.$white;
+     width: 70px;
+     height: 40px;
+     border-radius: 0%;
+     text-align: center;
+     line-height: 50px;
+     vertical-align: middle;
+     padding: 10px;
+     margin-bottom: .5rem;
+     background-image: url('/vue/assets/PDF_icon.svg');
+     background-color: quasarVariables.$white;
+     background-repeat: no-repeat, repeat;
+     width: 100px;
+     height: 100px;
+
+     span {
+       margin-left: 1rem;
+       color: quasarVariables.$dark-grey;
+       display: none;
+     }
+   }
+
+ ************/
+
+  .form-text a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 0;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding-right: 55px;
+    padding-bottom: 35px;
+    background: quasarVariables.$white url('../../../vue/assets/PDF_icon.svg') no-repeat;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .w-full {
+    border-style: solid;
+    border-color: quasarVariables.$dark-grey;
+    overflow: initial;
+    padding: 0;
+  }
+
+
+  /*
+  input[type="number"], input[type="text"] {
+    background-color : quasarVariables.$light-grey !important;
+    color: quasarVariables.$dark-grey;
+    border-width: 1px;
+    border-style: solid;
+    border-color: quasarVariables.$dark-grey;
+    max-width: 500px;
+    height: 100%;
+    overflow: hidden;
+    line-height: 100%;
+    font-size: 1.5rem;
+    z-index: 5;
+  }
+*/
+  .flatpickr-time {
+    text-align: center;
+    outline: 0;
+    height: 0;
+    line-height: 50px;
+    max-height: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    color: var(--vf-color-input);
+  }
+
+  .flatpickr-calendar.static {
+    top: 0;
+    position: relative;
+    left: 5px;
+  }
+
+  .flatpickr-time .numInputWrapper {
+    height: 45px;
+  }
+}
+
+/////// Timer Element starts here ////////
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  background-color: #eee;
+  /* Create the checkmark/indicator (hidden when not checked) */
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* On mouse-over, add a grey background color */
+  &:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: quasarVariables.$primary;
+  /* Show the checkmark when checked */
+  &:after {
+    display: block;
+  }
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 0.5rem;
+  top: 0;
+  width: 1rem;
+  height: 1.5rem;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-text-input-hidden {
+  display: none;
+}

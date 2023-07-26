@@ -1,0 +1,26 @@
+@use '../quasarVariables';
+
+.timerbox {
+  display: flex;
+  direction: ltr;
+  justify-content: center;
+  align-content: space-between;
+  border-color: quasarVariables.$primary;
+  border-width: 1px 0 1px 0;
+  border-style: dashed;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.timerbutton .q-btn {
+  margin-top: 3.5rem !important;
+  margin-left: 1rem !important;
+  background-color: quasarVariables.$primary;
+  color: quasarVariables.$white;
+}
+
+.timerbutton p {
+  margin-top: 4.5rem !important;
+  margin-left: 1rem !important;
+  color: quasarVariables.$primary;
+}

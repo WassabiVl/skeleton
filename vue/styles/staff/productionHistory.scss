@@ -1,0 +1,58 @@
+@use '../quasarVariables';
+
+main .prodhistory {
+
+  .q-table th {
+    font-size: 1rem;
+    background: quasarVariables.$primary;
+    color: quasarVariables.$white;
+  }
+
+  .q-table tbody td {
+    font-size: 16px;
+  }
+
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  #datepicker {
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+
+  #modelselection {
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+
+  .q-icon {
+    color: quasarVariables.$dark;
+  }
+
+  #plusbutton .q-icon {
+    color: quasarVariables.$white;
+  }
+
+  .history {
+    color: quasarVariables.$secondary;
+    text-align: left;
+    margin-left: 90px;
+  }
+
+  #csv_button {
+    background: quasarVariables.$primary;
+    color: quasarVariables.$white;
+    margin-right: 1rem;
+
+    .q-icon {
+      color: quasarVariables.$white;
+    }
+  }
+
+
+}
