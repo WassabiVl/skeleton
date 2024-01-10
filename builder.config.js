@@ -1,6 +1,7 @@
 import custom from './simlpe.builder.config';
+import { defineConfig } from '@vueform/builder';
 
-export default {
+export default defineConfig({
   categories: [
     {
       label: 'Fields',
@@ -25,4 +26,4 @@ export default {
       // ...
     }
   }
-};
+});

@@ -5,11 +5,11 @@ module.exports = {
     // "./vue/**/*.js",
     // "./vue/**/*.css",
     // "./vue/**/*.scss",
-    './vueform.config.js', // or where `vueform.config.js` is located
+    './vueform.config.js', // or where `vueform.config.js` is located. Change `.js` to `.ts` if required.
     './node_modules/@vueform/vueform/themes/tailwind/**/*.vue',
     './node_modules/@vueform/vueform/themes/tailwind/**/*.js',
-    './vue/vueFormBuilder/**/*.js',
-    './vue/vueFormBuilder/**/*.css'
+    './node_modules/@vueform/builder/**/*.js',
+    './node_modules/@vueform/builder/**/*.css'
   ],
   theme: {
     extend: {}
@@ -17,6 +17,6 @@ module.exports = {
   darkMode: 'class',
   plugins: [
     require('@vueform/vueform/tailwind'),
-    require('./vue/vueformBuilder/tailwind')
+    require('@vueform/builder/tailwind')
   ]
 };
